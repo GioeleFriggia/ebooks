@@ -1,0 +1,9 @@
+.card-background {
+  background-color: #ead1d12f;
+}
+/* AllTheBooks.css */
+
+.book-card:hover {
+  border: 2px solid rgba(227, 28, 28, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
