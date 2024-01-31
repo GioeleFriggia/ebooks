@@ -14,14 +14,6 @@
   background-color: #2e89e4; /* Colore di sfondo di ogni singolo elemento del carosello */
 }
 
-.carousel-item h5 {
-  color: rgb(5, 7, 83); /* Colore del testo del titolo del libro */
-}
-
-.carousel-item p {
-  color: #2275c8; /* Colore del testo del prezzo */
-}
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgb(

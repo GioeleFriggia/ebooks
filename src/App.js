@@ -1,11 +1,10 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import React from "react";
+import { Container } from "react-bootstrap"; // Assicurati di importare Container
+import BookList from "./components/BookList";
 import MyNav from "./components/MyNav";
-import MyCarousel from "./components/HomeCarousel"; // Assicurati di aver importato correttamente il componente MyCarousel
 import MyFooter from "./components/MyFooter";
 import Welcome from "./components/Welcome";
-import AllTheBooks from "./components/AllTheBooks";
-import { Container } from "react-bootstrap";
+import allBooks from "../src/data/fantasy.json";
 
 function App() {
   return (
@@ -13,8 +12,8 @@ function App() {
       <MyNav />
       <Container>
         <Welcome />
-        <MyCarousel /> {/* Aggiunto il componente MyCarousel */}
-        <AllTheBooks />
+        {/* Utilizza allBooks correttamente */}
+        <BookList books={allBooks} />
       </Container>
       <MyFooter />
     </>
