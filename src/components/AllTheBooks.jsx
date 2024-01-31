@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import "../assets/AllTheBooks.css";
 
-// Importa i JSON delle diverse categorie
+// Import JSON data for different categories
 import fantasy from "../data/fantasy.json";
 import history from "../data/history.json";
 import horror from "../data/horror.json";
@@ -27,7 +27,7 @@ const AllTheBooks = () => {
           <h2 className="category-title">{category.name}</h2>
           <Row className="g-2">
             {category.books.map((book) => (
-              <Col xs={12} md={3} key={book.asin} className="d-flex">
+              <Col xs={12} md={3} key={book.id} className="d-flex">
                 <Card className="book-cover h-100 d-flex flex-column card-background book-card">
                   <Card.Img variant="top" src={book.img} />
                   <Card.Body>
